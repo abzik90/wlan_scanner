@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/viewContainer"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/infoip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        />
+
+    <WebView
+        android:id="@+id/displayWebView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        />
+    <TextView
+        android:id="@+id/messageFromUser"
+        android:maxLength="5000"
+        android:text="Current Message is:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/proximityTextView"
+        android:maxLength="30"
+        android:text="Proximity is:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/magneticTextView"
+        android:maxLength="70"
+        android:text="Magnetic field in uT is:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/lightTextView"
+        android:maxLength="50"
+        android:text="Light brightness(in SI lux):"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/accelerometerTextView"
+        android:maxLength="70"
+        android:text="Accelerometer vectors:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/pressureTextView"
+        android:maxLength="70"
+        android:text="Pressure (in hPa or millibar):"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        />
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:maxLength="50"
+        android:text="Ambient temperature is (in Celsius):"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <TextView
+            android:id="@+id/bluetoothTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>
